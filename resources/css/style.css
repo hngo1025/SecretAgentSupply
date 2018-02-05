@@ -3,6 +3,10 @@ html {
 	font-size: 18px;
 }
 
+body {
+	line-height: 1.4;
+}
+
 h1 {
 	font-size: 2rem;
 	font-weight: bold;
@@ -26,12 +30,11 @@ h4 {
 .company .container {
 	display: flex;
 	align-items: center;
-	padding: 0.66rem 0;
+	padding: 0.66rem 0 .66rem 0.5rem;
 }
 
 .logo {
 	height: 1.5rem;
-	padding-left: 0.5rem;
 	padding-right: 1rem;
 }
 
@@ -58,7 +61,7 @@ nav {
 	
 }
 
-nav .container{
+nav ul{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -68,7 +71,8 @@ nav .container{
 	display: none;
 }
 
-.products {
+.products, 
+.business-info {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 3rem;
@@ -88,7 +92,7 @@ nav .container{
 }
 
 .box-img img {
-	max-width: 8em;
+	max-width: 8rem;
 }
 
 .name {
@@ -96,16 +100,12 @@ nav .container{
 	color: white;
 	background-color: black;
 	text-align: center;
-	padding: 0.5rem 0;
+	padding: 0.5rem;
 }
 
-.business-info {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 3rem;
-}
 
-.business-info .title {
+
+.title {
 	width: 35%;
 }
 
@@ -180,9 +180,10 @@ footer .container {
 		display: none;
 	}
 	
+	.products,
 	.business-info {
-		flex-wrap: wrap;
-	}
+    flex-wrap: wrap;
+  	}
 	
 	.title {
 		width: 90%;
